@@ -11,7 +11,7 @@ class TestKafkaClient:
     def test_message_e2e(self):
         message = 'hello world test message'.encode('utf-8')
 
-        # This also tests Kafka broker connection
+        # This could also test connection to broker.
         client = Producer(config['kafka']['server'], self.test_topic)
         client.produce(message)
         client.producer.flush()
@@ -19,5 +19,5 @@ class TestKafkaClient:
         consumer = Consumer(config['kafka']['server'], self.test_topic)
         messages = consumer.consume()
 
-        # NOTE: Only check most recent value consumed
+        # Check most recent message.
         assert messages[-1].value == message
