@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# PyCharm
+.idea/
+
+# SSL keys for Kafka
+keys/
+
 # Distribution / packaging
 .Python
 build/

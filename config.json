@@ -1,0 +1,18 @@
+{
+  "monitor_interval": 10,
+  "websites": {
+    "https://www.google.com": "Google",
+    "https://www.wikipedia.org": "Free"
+  },
+  "kafka": {
+    "server": "kafka-284ee0c1-roma-3ced.aivencloud.com:27946",
+    "topic": "pinger_events"
+  },
+  "postgres": {
+    "host": "pg-10fb849c-roma-3ced.aivencloud.com",
+    "db": "defaultdb",
+    "port": "27944",
+    "username": "avnadmin",
+    "table": "ping_metrics"
+  }
+}
