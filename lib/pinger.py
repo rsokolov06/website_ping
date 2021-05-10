@@ -5,6 +5,9 @@ from typing import List
 import aiohttp
 from lib.kafka_actors import Producer
 
+# Inspired by:
+# https://realpython.com/async-io-python/#a-full-program-asynchronous-requests
+##
 
 class Pinger:
 
